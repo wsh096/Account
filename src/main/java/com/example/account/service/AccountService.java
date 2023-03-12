@@ -37,7 +37,6 @@ public class AccountService {
 
         validateCreateAccount(accountUser);
     
-    //10개의 난수이며 겹치지 않는 난수 서비스를 MakeAccountNumber의 로직으로 제작.
         String newAccountNumber = getMakeAccountNumber();
         
         return AccountDto.fromEntity(
